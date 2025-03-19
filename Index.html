@@ -1,1 +1,86 @@
+<!--
+Name: Alex Smith
+Course: Web Development 101
+Teacher: Mr. Johnson
+School: Manitoba Middle School
+Date Last Modified: October 15, 2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treaty 1 Explained for Students</title>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="=css/styles.css">
+    <!-- Internal Stylesheet for page-specific adjustments -->
+    <style>
+        /* Map container styling */
+        #treaty-map {
+            width: 90%;
+            height: 400px;
+            margin: 20px auto;
+            border: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding Treaty 1</h1>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="#today">Today</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <!-- Overview Section -->
+        <div class="content-section" id="overview">
+            <h2>What is Treaty 1?</h2>
+            <figure>
+                <img src="lower-fort-garry.jpg" alt="Lower Fort Garry where Treaty 1 was signed" style="width:100%">
+                <figcaption>Lower Fort Garry, negotiation site. Source: <a href="https://www.pc.gc.ca/en/lhn-nhs/mb/fortgarry">Parks Canada</a></figcaption>
+            </figure>
+            <p>Treaty 1 was the first agreement between Indigenous peoples and the Canadian government in Manitoba, signed in August 1871. It involved the Anishinaabe (Ojibwe) and Muskegon Cree nations. <span class="highlight">This treaty allowed settlers to use the land while promising benefits to Indigenous communities.</span> (Source: <a href="https://www.rcaanc-cirnac.gc.ca/eng/1100100020589/1581292952038">Government of Canada</a>)</p>
+        </div>
+
+        <!-- History Section -->
+        <div class="content-section" id="history">
+            <h2>Key Promises</h2>
+            <ul>
+                <li>Each family of five received 160 acres of land.</li>
+                <li>Annual payments of $3 per person.</li>
+                <li>Schools and farming tools were promised.</li>
+            </ul>
+            <p>Treaty 1 is unique because it set the pattern for later numbered treaties. Unlike others, it included "outside promises" (additional verbal agreements) that were later written into Treaty 2. (Source: <a href="https://trcm.ca/treaties/">Treaty Relations Commission</a>)</p>
+        </div>
+
+        <!-- Map Section -->
+        <div class="content-section" id="map">
+            <h2>Treaty Area</h2>
+            <div id="treaty-map">
+                <!-- Embedded Google Map -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63936.54593109265!2d-97.14509139999999!3d50.112728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea71a94f267d3d%3A0x8d66e06e5ae2ed76!2sLower%20Fort%20Garry%20National%20Historic%20Site!5e0!3m2!1sen!2sca!4v1697419991232!5m2!1sen!2sca" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+                </iframe>
+            </div>
+            <figcaption>Map of Treaty 1 area. Source: <a href="https://www.sac-isc.gc.ca/eng/1100100020576/1616073943706">Indigenous Services Canada</a></figcaption>
+        </div>
+
+        <!-- Today Section -->
+        <div class="content-section" id="today">
+            <h2>Treaty 1 Today</h2>
+            <p>Communities like Long Plain First Nation use treaty rights for economic projects, such as gas stations and urban reserves. This helps create jobs and sustain their culture. (Source: <a href="https://treaty1.ca/">Treaty 1 Nation</a>)</p>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Navigation styling */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    background-color: #2c3e50;
+    text-align: center;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #34495e;
+    border-radius: 4px;
+}
+
+/* Content sections */
+.content-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.highlight {
+    background-color: #ffeaa7;
+    font-style: italic;
+}
+
+/* Accessibility: Focus states */
+a:focus {
+    outline: 3px solid #3498db;
+}
