@@ -3,7 +3,7 @@ Name: Alex Smith
 Course: Web Development 101
 Teacher: Mr. Johnson
 School: Manitoba Middle School
-Date Last Modified: October 15, 2023
+Date Last Modified: October 17, 2023
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -11,76 +11,114 @@ Date Last Modified: October 15, 2023
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treaty 1 Explained for Students</title>
-    <!-- External Stylesheet -->
-    <link rel="stylesheet" href="=css/styles.css">
-    <!-- Internal Stylesheet for page-specific adjustments -->
+    <link rel="stylesheet" href="Styles.css">
     <style>
-        /* Map container styling */
         #treaty-map {
             width: 90%;
             height: 400px;
             margin: 20px auto;
-            border: 2px solid #333;
+            border: 4px solid #3498db;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(52,152,219,0.2);
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Understanding Treaty 1</h1>
-        <!-- Navigation Bar -->
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#map">Map</a></li>
-                <li><a href="#today">Today</a></li>
-            </ul>
-        </nav>
-    </header>
+   <!-- Navigation Bar in Header -->
+  <!-- Updated Header Section -->
+<!-- Updated Header Section -->
+<header class="hero-section">
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#today">Today</a></li>
+        </ul>
+    </nav>
+    <div class="hero-content">
+        <h1 class="hero-title">Understanding Treaty 1</h1>
+        <div class="hero-divider"></div>
+        <p class="hero-subtitle">Honoring Manitoba's Historic Agreement</p>
+    </div>
+</header>
 
     <main>
         <!-- Overview Section -->
         <div class="content-section" id="overview">
             <h2>What is Treaty 1?</h2>
             <figure>
-                <img src="lower-fort-garry.jpg" alt="Lower Fort Garry where Treaty 1 was signed" style="width:100%">
-                <figcaption>Lower Fort Garry, negotiation site. Source: <a href="https://www.pc.gc.ca/en/lhn-nhs/mb/fortgarry">Parks Canada</a></figcaption>
+                <img src="Images-and-links/Lower_Fort_Garry_(8111583400).jpg" 
+                     alt="Lower Fort Garry stone walls" 
+                     class="section-image">
+                <figcaption>Lower Fort Garry, where Treaty 1 was signed</figcaption>
             </figure>
-            <p>Treaty 1 was the first agreement between Indigenous peoples and the Canadian government in Manitoba, signed in August 1871. It involved the Anishinaabe (Ojibwe) and Muskegon Cree nations. <span class="highlight">This treaty allowed settlers to use the land while promising benefits to Indigenous communities.</span> (Source: <a href="https://www.rcaanc-cirnac.gc.ca/eng/1100100020589/1581292952038">Government of Canada</a>)</p>
+            <p>The Anishinaabe (Ojibwe) and Muskegon Cree nations, which occupied parts of modern-day southern Manitoba, including Winnipeg, signed Treaty 1, the first formal agreement between Indigenous nations and the Canadian government in Manitoba, in August 1871. The treaty promised Indigenous communities benefits like reserves, yearly payments, farming tools, education, and the continued right to hunt and fish, but many of these promises were not fully fulfilled, resulting in ongoing disputes and calls for reconciliation.</span></p>
         </div>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- History Section -->
         <div class="content-section" id="history">
             <h2>Key Promises</h2>
-            <ul>
-                <li>Each family of five received 160 acres of land.</li>
-                <li>Annual payments of $3 per person.</li>
-                <li>Schools and farming tools were promised.</li>
-            </ul>
-            <p>Treaty 1 is unique because it set the pattern for later numbered treaties. Unlike others, it included "outside promises" (additional verbal agreements) that were later written into Treaty 2. (Source: <a href="https://trcm.ca/treaties/">Treaty Relations Commission</a>)</p>
+            <div class="card">
+                <ul>
+                    <li>Each family of five received 160 acres of land</li>
+                    <li>Annual payments of $3 per person</li>
+                    <li> Schools and farming tools promised</li>
+                </ul>
+            </div>
+            <p>Treaty 1 is special because it established the framework for Canada's subsequent numbered treaties.  In contrast to previous treaties, it had "outside promises"—additional verbal agreements made during negotiations—that weren't initially included in the written version.  These pledges were ultimately recorded in Treaty 2, which contained provisions for schools, animals, and farming implements.  This distinction emphasizes how difficult it was to make sure that every agreement was upheld and how oral traditions continue to influence treaty-making.
+
+
+
+
+
+
+            </p>
         </div>
 
         <!-- Map Section -->
         <div class="content-section" id="map">
             <h2>Treaty Area</h2>
             <div id="treaty-map">
-                <!-- Embedded Google Map -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63936.54593109265!2d-97.14509139999999!3d50.112728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea71a94f267d3d%3A0x8d66e06e5ae2ed76!2sLower%20Fort%20Garry%20National%20Historic%20Site!5e0!3m2!1sen!2sca!4v1697419991232!5m2!1sen!2sca" 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.7606284294848!2d-96.93705452346279!3d50.10948727152911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea60436a49462d%3A0x2dfd6b086e18dcf5!2sLower%20Fort%20Garry%20National%20Historic%20Site!5e0!3m2!1sen!2sca!4v1742359646366!5m2!1sen!2sca"
                 width="100%" 
                 height="100%" 
                 style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy">
-                </iframe>
+            </iframe>
             </div>
-            <figcaption>Map of Treaty 1 area. Source: <a href="https://www.sac-isc.gc.ca/eng/1100100020576/1616073943706">Indigenous Services Canada</a></figcaption>
         </div>
 
         <!-- Today Section -->
         <div class="content-section" id="today">
             <h2>Treaty 1 Today</h2>
-            <p>Communities like Long Plain First Nation use treaty rights for economic projects, such as gas stations and urban reserves. This helps create jobs and sustain their culture. (Source: <a href="https://treaty1.ca/">Treaty 1 Nation</a>)</p>
+            <p>Communities such as <strong>Long Plain First Nation</strong> make use of their treaty rights to build urban reserves and gas stations, among other economic initiatives.  These programs help to maintain their culture and sovereignty while creating jobs, bringing in money, and fostering communal development.  Indigenous communities may guarantee long-term self-sufficiency and boost their economies by utilizing treaty agreements.</p>
         </div>
     </main>
+
+    <!-- Footer with Sources -->
+    <footer class="site-footer">
+        <h3>Sources & Credits</h3>
+        <ul class="source-list">
+            <li> Treaty Text & History: 
+                <a href="https://www.rcaanc-cirnac.gc.ca/eng/1100100020589/1581292952038">Government of Canada</a>
+            </li>
+            <li> Map Data: 
+                <p>Google Maps(Where else)</p>
+            </li>
+            <li> Treaty Relations: 
+                <a href="https://trcm.ca/treaties/">Treaty Relations Commission</a>
+            </li>
+            <li> Fort Garry Image: 
+                <a href="https://commons.wikimedia.org/w/index.php?fulltext=1&search=Lower+fort+garry&title=Special%3ASearch&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1#/media/File:Lower_Fort_Garry_(8111583400).jpg"></a>
+            </li>
+            <li> Additional Resources: 
+                <a href="https://treaty1.ca/">Treaty 1 Nation Portal</a>
+            </li>
+        </ul>
+    </footer>
+ 
 </body>
 </html>
