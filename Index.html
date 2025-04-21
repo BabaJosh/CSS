@@ -2,123 +2,155 @@
 Name: Joshua Oladokun
 Course: Web Development 10s
 Teacher: Mrs Hoitink
-School:Pembina Trails Collegiate
-Date Last March 3rd, 2025
+School: Pembina Trails Collegiate
+Date Last Modified: April
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treaty 1 Explained for Students</title>
+    <title>Treaty 1 Interactive Guide</title>
     <link rel="stylesheet" href="Styles.css">
     <style>
-        #treaty-map {
-            width: 90%;
-            height: 400px;
-            margin: 20px auto;
-            border: 4px solid #3498db;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(52,152,219,0.2);
+        /* Page-specific map styling */
+        #territoryVisualizer {
+            border: 3px solid var(--primary-accent);
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(52, 152, 219, 0.15);
+            transition: transform 0.3s ease;
         }
     </style>
 </head>
 <body>
-   <!-- Navigation Bar in Header -->
-  <!-- Updated Header Section -->
-<!-- Updated Header Section -->
-<header class="hero-section">
-    <nav>
-        <ul class="nav-links">
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#history">History</a></li>
-            <li><a href="#map">Map</a></li>
-            <li><a href="#today">Today</a></li>
-        </ul>
-    </nav>
-    <div class="hero-content">
-        <h1 class="hero-title">Understanding Treaty 1</h1>
-        <div class="hero-divider"></div>
-        <p class="hero-subtitle">Honoring Manitoba's Historic Agreement</p>
-    </div>
-</header>
+    <header class="heritageHeader" role="banner">
+        <nav aria-label="Main navigation" class="culturalNav">
+            <ul class="navGrid">
+                <li><a href="#overview" class="navPillar" tabindex="0">Overview</a></li>
+                <li><a href="#history" class="navPillar" tabindex="0">Historical Terms</a></li>
+                <li><a href="#media" class="navPillar" tabindex="0">Multimedia</a></li>
+                <li><a href="#today" class="navPillar" tabindex="0">Impact</a></li>
+                <li><a href="More.html" class="navPillar" tabindex="0">Learn More</a></li>
+            </ul>
+        </nav>
+        <h1 class="culturalTitle">Understanding Treaty 1<br>
+            <span class="titleSubtext">Honoring Manitoba's Historic Agreement</span>
+        </h1>
+    </header>
 
-    <main>
+    <main class="knowledgeHub" role="main">
         <!-- Overview Section -->
-        <div class="content-section" id="overview">
-            <h2>What is Treaty 1?</h2>
-            <figure>
-                <img src="Images-and-links/Lower_Fort_Garry_(8111583400).jpg" 
-                     alt="Lower Fort Garry stone walls" 
-                     class="section-image">
-                <figcaption>Lower Fort Garry, where Treaty 1 was signed</figcaption>
+        <section id="overview" class="infoPanel" tabindex="0" aria-labelledby="overviewHeading">
+            <h2 id="overviewHeading" class="sectionHead">How and why were the treaties founded</h2>
+            <figure class="historicalFigure">
+                <img src="Images-and-links/Lower_Fort_Garry_04.jpg" 
+                     alt="Stone walls of Lower Fort Garry National Historic Site where Treaty 1 was signed" 
+                     class="culturalImage">
+                <figcaption class="mediaCaption">
+                    Lower Fort Garry signing site. Source: 
+                    <a href="https://commons.wikimedia.org/wiki/File:Lower_Fort_Garry_04.jpg" 
+                       aria-label="View original image on Wikimedia Commons" 
+                       class="sourceLink">Wikimedia Commons</a>
+                </figcaption>
             </figure>
-            <p>The Anishinaabe (Ojibwe) and Muskegon Cree nations, which occupied parts of modern-day southern Manitoba, including Winnipeg, signed Treaty 1, the first formal agreement between Indigenous nations and the Canadian government in Manitoba, in August 1871. The treaty promised Indigenous communities benefits like reserves, yearly payments, farming tools, education, and the continued right to hunt and fish, but many of these promises were not fully fulfilled, resulting in ongoing disputes and calls for reconciliation.</span></p>
-        </div>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+            <p class="narrativeText">
+                 <span class="emphasizedTerm">Long long ago, </span>  in 1867, Canada was formed by joining some of its territories. The individuals who were in power wanted the country to grow and expand across the territory, just like how the United States was growing. They specifically wanted to get a huge area called Rupert's Land, which was owned by a company called the Hudson's Bay Company. The territory possessed lots of space, natural resources, and fertile land.
 
-        <!-- History Section -->
-        <div class="content-section" id="history">
-            <h2>Key Promises</h2>
-            <div class="card">
-                <ul>
-                    <li>Each family of five received 160 acres of land</li>
-                    <li>Annual payments of $3 per person</li>
-                    <li> Schools and farming tools promised</li>
-                </ul>
-            </div>
-            <p>Treaty 1 is special because it established the framework for Canada's subsequent numbered treaties.  In contrast to previous treaties, it had "outside promises"—additional verbal agreements made during negotiations—that weren't initially included in the written version.  These pledges were ultimately recorded in Treaty 2, which contained provisions for schools, animals, and farming implements.  This distinction emphasizes how difficult it was to make sure that every agreement was upheld and how oral traditions continue to influence treaty-making.
-
-
-
-
-
-
+                The Canadian government negotiated with Britain and the Hudson's Bay Company to buy Rupert's Land. But even though the land was technically in Canada, it still had many Indigenous people who had been there for a very long time. So Canada had to negotiate treaties which are special agreements with the Indigenous people to share the land.
+                Between 1871 and 1921, Canada entered into 11 Numbered Treaties with different Indigenous groups. In the treaties, the Indigenous peoples had agreed to allow Canada to share their land. The government promised to give them things like:
             </p>
-        </div>
+            <ul class="treatyHighlights">
+                <li>Land to live on (referred to as reserves),</li>
+                <li>Money every year (referred to as annuities),</li>
+                <li>The right to continue hunting and fishings</li>
+                <li>Tools and animals to help them farm</li>
+                <li>Teachers and schools for their children</li>
+            </ul>
+        </section>
 
-        <!-- Map Section -->
-        <div class="content-section" id="map">
-            <h2>Treaty Area</h2>
-            <div id="treaty-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.7606284294848!2d-96.93705452346279!3d50.10948727152911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea60436a49462d%3A0x2dfd6b086e18dcf5!2sLower%20Fort%20Garry%20National%20Historic%20Site!5e0!3m2!1sen!2sca!4v1742359646366!5m2!1sen!2sca"
-                width="100%" 
-                height="100%" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
+        <!-- Historical Terms Section -->
+        <section id="history" class="infoPanel" tabindex="0" aria-labelledby="historyHeading">
+            <h2 id="historyHeading" class="sectionHead">What is Treaty 1</h2>
+            <div class="termComparison">
+                <article class="termCard writtenTerms">
+                    <p>Treaty 1, is the first of the numbered treaties signed in Canada between the Anishinaabe and Muskegon Cree peoples, and the Crown. It was signed on August 3, 1871, at Lower Fort Garry in Manitoba. The treaty aimed to establish peace and a relationship between the Canadian government and Indigenous peoples in the area, as it established specific terms of the treaty, including a reserve land allocation and guaranteed hunting and fishing rights.</p>
+                </article>
+                <article class="termCard oralTerms">
+                    <h3>Oral Agreements</h3>
+                    <ul>
+                        <li>Livestock provisions</li>
+                        <li>Hunting/fishing rights</li>
+                        <li>Chiefs' medals and flags</li>
+                    </ul>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <!-- Today Section -->
-        <div class="content-section" id="today">
-            <h2>Treaty 1 Today</h2>
-            <p>Communities such as <strong>Long Plain First Nation</strong> make use of their treaty rights to build urban reserves and gas stations, among other economic initiatives.  These programs help to maintain their culture and sovereignty while creating jobs, bringing in money, and fostering communal development.  Indigenous communities may guarantee long-term self-sufficiency and boost their economies by utilizing treaty agreements.</p>
-        </div>
+        <!-- Multimedia Section -->
+        <section id="media" class="infoPanel mediaContainer" tabindex="0" aria-labelledby="mediaHeading">
+            <h2 id="mediaHeading" class="sectionHead">Google map showing where treaty 1 was signed.</h2>
+            <div class="videoWrapper">
+                <iframe id="territoryVisualizer" 
+                        title="Interactive Treaty 1 Territory Map"
+                        aria-describedby="mapDescription"
+                        width="100%" 
+                        height="400"
+                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.7604446152086!2d-96.93705452444543!3d50.10949071185636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea60436a49462d%3A0x2dfd6b086e18dcf5!2sLower%20Fort%20Garry%20National%20Historic%20Site!5e0!3m2!1sen!2sca!4v1745228923779!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> 
+                        loading="lazy">
+                </iframe>
+            </div>
+            
+            <div class="videoWrapper">
+                <h3>Heres a video for you to further understand Treaty 1</h3>
+                i<iframe width="560" height="315" src="https://www.youtube.com/embed/SVaK9rAV32A?si=QPqNP8y-HF5WVy_G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                <p id="videoDesc" class="sr-only">
+                    Historical documentary explaining Treaty 1 negotiations and impacts
+                </p>
+                <a href="https://www.youtube.com/watch?v=SVaK9rAV32A" class="videoAltLink" tabindex="0">
+                    View This on YouTube
+                </a>
+            </div>
+        </section>
+
+        <!-- Modern Impact Section -->
+        <section id="today" class="infoPanel" tabindex="0" aria-labelledby="todayHeading">
+            <h2 id="todayHeading" class="sectionHead">How this Impacts us Today</h2>
+            <div class="impactGrid">
+                <article class="impactCard">
+                    <h3>Land and rights.</h3>
+                    <ul>
+                        <li>Indigenous communities still live on reserve lands promised in Treaty 1.</li>
+                        <li>Many urban reserves (like in Winnipeg) help First Nations run businesses and create jobs.</li>
+                        <li>Hunting & fishing rights are still protected in some areas.</li>
+                    </ul>
+                </article>
+                <article class="impactCard">
+                    <h3>Why It Matters</h3>
+                    <p>Treaty 1 wasn’t just history, it’s a living promise that still shapes:</p>
+                    <ul>
+                        <li>Who owns land in Manitoba.</li>
+                        <li>Rights for Indigenous peoples.</li>
+                        <li>How Canada and First Nations work together.</li><
+                    </ul>
+                </article>
+            </div>
+        </section>
     </main>
 
-    <!-- Footer with Sources -->
-    <footer class="site-footer">
-        <h3>Sources & Credits</h3>
-        <ul class="source-list">
-            <li> Treaty Text & History: 
-                <a href="https://www.rcaanc-cirnac.gc.ca/eng/1100100020589/1581292952038">Government of Canada</a>
-            </li>
-            <li> Map Data: 
-                <p>Google Maps(Where else)</p>
-            </li>
-            <li> Treaty Relations: 
-                <a href="https://trcm.ca/treaties/">Treaty Relations Commission</a>
-            </li>
-            <li> Fort Garry Image: 
-                <a href="https://commons.wikimedia.org/w/index.php?fulltext=1&search=Lower+fort+garry&title=Special%3ASearch&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1#/media/File:Lower_Fort_Garry_(8111583400).jpg"></a>
-            </li>
-            <li> Additional Resources: 
-                <a href="https://treaty1.ca/">Treaty 1 Nation Portal</a>
-            </li>
+    <footer class="sourceFooter" role="contentinfo">
+        <h3 class="footerHead">References & Resources</h3>
+        <ul class="sourceList">
+            <li><a href="https://www.rcaanc-cirnac.gc.ca/eng/1100100020589/1581292952038" 
+                   aria-label="Government of Canada Treaty 1 documentation"
+                   class="sourceLink">Official Treaty Text</a></li>
+            <li><a href="https://trcm.ca/treaties/" 
+                   aria-label="Treaty Relations Commission resources"
+                   class="sourceLink">Treaty Education Materials</a></li>
+            <li><a href="https://treaty1.ca/" 
+                   aria-label="Treaty 1 Nation official website"
+                   class="sourceLink">Modern Treaty Implementation</a></li>
         </ul>
     </footer>
- 
 </body>
 </html>
